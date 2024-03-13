@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A document for the fundamentals"/>
+    <title>C++ Doc</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="h_div" id="left-part">
+    <header class="follow">
+    <h1>C++ Doc</h1>
+      <nav id="navbar">
+        <header>/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\</header>
+          <a class="nav-link" href="#Intro">Intro</a>
+          <a class="nav-link" href="#Basic">Basic</a>
+          <a class="nav-link" href="#Condition">Condition</a>
+          <a class="nav-link" href="#Loop">Loop</a>
+          <a class="nav-link" href="#Function">Function</a>
+      </nav>
+    </header>
+    </div>
+    <div class="m_div">
+    <main id="main-doc">
+      <section class="main-section" id="Intro">
+        <header ><h1>INTRO</h1></header>
+        <code></code>
+        <h4>What is C++?</h4>
+        <p>C++ is a cross-platform language that can be used to create high-performance applications.</p>
+        <p>C++ was developed by Bjarne Stroustrup, as an extension to the C language.</p>
+        <p>C++ gives programmers a high level of control over system resources and memory.</p>
+        <p>The language was updated 4 major times in 2011, 2014, 2017, and 2020 to C++11, C++14, C++17, C++20.</p>
+        <h4>Why Use C++?</h4>
+        <p>C++ is one of the world's most popular programming languages.</p>
+        <p>C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.</p>
+        <p>C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.</p>
+        <p>C++ is portable and can be used to develop applications that can be adapted to multiple platforms.</p>
+        <p>C++ is fun and easy to learn!</p>
+        <p>As C++ is close to C, C# and Java, it makes it easy for programmers to switch to C++ or vice versa.</p>
+      </section>
+      <section class="main-section" id="Basic">
+        <header><h1>BASIC</h1></header>
+        <code></code>
+        <h4>EXAMPLE:</h4>
+        <div class="example">
+          <p>1) #include &ltiostream&gt</p>
+          <p class="close-dis">2) using namespace std;</p>
+          <p>3) int main() {</p>
+          <p class="close-dis indent">4) cout << "Hello   World!";</p>
+          <p class="close-dis indent">5) return 0;</p>
+          <p class="close-dis">6) }</p>
+        </div>
+        <ol >
+          <li>#include <iostream> is a header file library that lets us work with input and output objects, such as cout (used in line 5). Header files add functionality to C++ programs.</li>
+          <li>using namespace std means that we can use names for objects and variables from the standard library.</li>
+          <li>Another thing that always appear in a C++ program is int main(). This is called a function. Any code inside its curly brackets {} will be executed. </li>
+          <li>cout (pronounced "see-out") is an object used together with the insertion operator (<<) to output/print text. In our example, it will output "Hello World!".</li>
+          <li>return 0 ends the main function.</li>
+          <li>Do not forget to add the closing curly bracket } to actually end the main function.</li>
+        </ol>
+      </section>
+      <section class="main-section" id="Condition">
+        <header><h1>CONDITION</h1></header>
+        <code></code>
+        <ul>
+          <li>Less than: a < b</li>
+          <li>Less than or equal to: a <= b</li>
+          <li>Greater than: a > b</li>
+          <li>Greater than or equal to: a >= b</li>
+          <li>Equal to a == b</li>
+          <li>Not Equal to: a != b</li>
+        </ul>
+        <h4>C++ has the following conditional statements:</h4>
+        <ul>
+          <li>Use <strong>IF</strong> to specify a block of code to be executed, if a specified condition is true</li>
+          <li>Use <strong>ELSE</strong> to specify a block of code to be executed, if the same condition is false</li>
+          <li>Use <strong>ELSE IF</strong> to specify a new condition to test, if the first condition is false</li>
+          <li>Use <strong>SWITCH</strong> and <strong>CASE</strong> to specify many alternative blocks of code to be executed</li>
+        </ul>
+        <h4>EXAMPLE:</h4>
+        <div class="example">
+          <p>if (20 > 18) {</p>
+          <p class="indent close-dis">cout << "20 is greater than 18";</p>
+          <p class="close-dis">}</p>
+        </div>
+      </section>
+      <section class="main-section" id="Loop">
+        <header><h1>LOOP</h1></header>
+        <code></code>
+        <p>Loops can execute a block of code as long as a specified condition is reached.</p>
+        <p>Loops are handy because they save time, reduce errors, and they make code more readable.</p>
+        <h3>C++ While Loop:</h3>
+        <p class="indent">The while loop loops through a block of code as long as a specified condition is true:</p>
+        <h5>WHILE EXAMPLE:</h5>
+        <div class="example">
+          <p>while (condition) {</p>
+          <p class="indent close-dis">// code block to be executed</p>
+          <p class="close-dis">{</p>
+        </div>
+        <h3>C++ Do/While Loop</h3>
+        <p class="indent">The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.</p>
+        <h5>DO/WHILE EXAMPLE:</h5>
+        <div class="example">
+          <p>do {</p>
+          <p class="indent close-dis">// code block to be executed</p>
+          <p class="close-dis">}</p>
+          <p class="close-dis">while (condition);</p>
+        </div> 
+        <h3>C++ For Loop:</h3>
+        <p class="indent">When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:</p>
+        <h5>FOR EXAMPLE:</h5>
+        <div class="example">
+          <p>for (statement 1; statement 2; statement 3) {</p>
+          <p class="indent close-dis">// code block to be executed</p>
+          <p class="close-dis">}</p>
+        </div>
+        <p><strong>Statement 1</strong> is executed (one time) before the execution of the code block.</p>
+        <p><strong>Statement 2</strong> defines the condition for executing the code block.</p>
+        <p><strong>Statement 3</strong> is executed (every time) after the code block has been executed.</p>
+      </section>
+      <section class="main-section" id="Function">
+        <header><h1>FUNCTION</h1></header>
+        <code></code>
+        <p>A function is a block of code which only runs when it is called.</p>
+        <p>You can pass data, known as parameters, into a function.</p>
+        <p>Functions are used to perform certain actions, and they are important for reusing code: Define the code once, and use it many times.</p>
+        <h3>Create a Function</h3>
+        <p>C++ provides some pre-defined functions, such as main(), which is used to execute code. But you can also create your own functions to perform certain actions.</p>
+        <p>To create (often referred to as declare) a function, specify the name of the function, followed by parentheses (): </p>
+        <div class="example">
+          <p>void myFunction() {</p>
+          <p class="close-dis indent">// code to be executed</p>
+          <p class="close-dis">}</p>
+        </div>
+        <h5>EXAMPLE EXPLAINED</h5>
+        <ul>
+          <li><strong>myFunction()</strong> is the name of the function</li>
+          <li><strong>void</strong> means that the function does not have a return value. You will learn more about return values later in the next chapter</li>
+          <li>inside the function <strong>(the body)</strong>, add code that defines what the function should do</li>
+        </ul>
+      </section>
+    </main>
+    </div>
+  </body>
+</html>
